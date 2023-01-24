@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+html, body {
+    height: 100vh;
+    width: 100%;
+}
+  
+.container{
+height: 100%;
+text-align: center;
+}
+.notes{
+margin-top: 10px;
+display: inline-block;
+height: 100vh;
+width: 50%;
+border-radius: 20px;
+text-align: center;
+}
+
+#my-notes-text{
+    height: 100%;
+    background-color: lightblue;
+    border-radius: 20px;
+}
+
+.add-new-notes{
+    position: fixed;
+    bottom: 10px;
+    margin-left:500px;
+}
+
+/* favourite buttons */
+.edits_buttons{
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .notes {
+        width: 70%;
+    }
+    #navbarSupportedContent{
+        margin-left: 6rem;
+    }
+    .add-new-notes{
+        position: fixed;
+        bottom: 10px;
+        margin-left: 600px;
+    }
+}
+
+
+/* need to remove media tags upto 2 and make add notes position fixed with responsiveness */
+@media only screen and (max-width: 991px) {
+    .notes {
+        width: 70%;
+    }
+    .add-new-notes{
+        position: fixed;
+        bottom: 10px;
+        margin-left: 420px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .notes {
+        width: 70%;
+    }
+    .add-new-notes{
+        position: fixed;
+        bottom: 10px;
+        margin-left: 300px;
+    }
+}
+
+/* upto this */
+
+@media only screen and (max-width: 530px) {
+    .notes {
+        width: 100%;
+        height: 100%;
+    }
+
+    .add-new-notes{
+        /* background-color: red; */
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        height: 60px;
+        width: 60px;
+    }
+}
+
+@media only screen and (max-width: 488px) {
+    .edits_buttons{
+        margin-right: 40px;
+        margin-top: 10px;
+    }
+}
+
+/* checkbox class */
+.checkbox-round {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 10px; margin-right: 10px; margin-top: 10px
+}
+
+.checkbox-round:checked {
+    background-color: black;
+}
+
+
